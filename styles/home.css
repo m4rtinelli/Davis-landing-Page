@@ -1,13 +1,37 @@
+body{
+  background: radial-gradient(139.17% 139.17% at 50% 50%, #675F6C 0%, #CCCCCC 100%);
+}
+
 .video-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 100dvw;
-  max-height: 1000px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Ensure the container itself doesn't cause overflow */
 }
 
 video {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain; /* Fill the entire screen, potentially cropping the video */
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%); /* Initially hidden below the screen */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px 5px 5px 5px;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition for animation */
+}
+
+footer.visible {
+  transform: translateX(-50%) translateY(-50%); /* Move to the middle of the screen */
+  opacity: 1;
+}
+
+
