@@ -1,5 +1,9 @@
-body{
-  background: radial-gradient(139.17% 139.17% at 50% 50%, #675F6C 0%, #CCCCCC 100%);
+body {
+  background: radial-gradient(
+    139.17% 139.17% at 50% 50%,
+    #675f6c 0%,
+    #cccccc 100%
+  );
 }
 
 .video-container {
@@ -33,5 +37,3 @@ footer.visible {
   transform: translateX(-50%) translateY(-50%); /* Move to the middle of the screen */
   opacity: 1;
 }
-
-
