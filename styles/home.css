@@ -4,22 +4,91 @@ body {
     #675f6c 0%,
     #cccccc 100%
   );
+  overflow: hidden;
 }
 
 .video-container {
+  position: relative;
   display: flex;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  max-height: 100dvh;
   overflow: hidden;
 }
 
 video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: contain;
+  min-width: 100dvw;
+  width: 100dvw;
+  height: 100dvh;
+  object-fit: cover;
 }
 
+.top-text {
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  text-transform: uppercase;
+  font-family: "Xenku-Display";
+  font-size: 20px;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container h1 {
+  font-family: "Xenku-Display";
+  font-size: 120px;
+  color: white;
+}
+
+.bottom-text {
+  position: absolute;
+  max-width: max-content;
+  left: 0;
+  align-self: flex-end;
+  background-color: transparent;
+  padding-left: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Xenku-Display";
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.mini-video {
+  max-width: 350px;
+  box-shadow: inset 0 0 0 3px #fff;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.mini-video video {
+  min-width: unset !important;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* optional footer */
+/* 
 footer {
   position: fixed;
   bottom: 0;
@@ -36,4 +105,4 @@ footer {
 footer.visible {
   transform: translateX(-50%) translateY(-50%);
   opacity: 1;
-}
+} */

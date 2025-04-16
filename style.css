@@ -2,6 +2,10 @@
 @import url("./styles/reset.css");
 /*  */
 
+/* fonts */
+@import url("./styles/fonts.css");
+/*  */
+
 /* home */
 @import url("./styles/home.css");
 /*  */
