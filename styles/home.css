@@ -47,19 +47,21 @@ video {
 
 .main-container h1 {
   font-family: "Xenku-Display";
-  font-size: 120px;
+  font-size: 110px;
   color: white;
 }
 
 .bottom-text {
   position: absolute;
-  max-width: max-content;
-  left: 0;
+  max-width: 100%;
+  /* left: 0; */
   align-self: flex-end;
   background-color: transparent;
   padding-left: 30px;
+  padding-right: 30px;
   margin-bottom: 60px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
@@ -87,6 +89,7 @@ video {
   height: auto;
   object-fit: cover;
 }
+
 /* optional footer */
 /* 
 footer {
@@ -106,3 +109,62 @@ footer.visible {
   transform: translateX(-50%) translateY(-50%);
   opacity: 1;
 } */
+
+@media (max-width: 1800px) {
+  .main-container h1 {
+    font-size: 90px;
+  }
+
+  .coming-soon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1540px) {
+  .main-container h1 {
+    font-size: 60px;
+  }
+
+  .coming-soon {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 778px) {
+  .text-container {
+    font-size: 12px;
+    text-align: left;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .mini-video {
+    position: absolute;
+    width: 300px;
+    right: 12px;
+    top: -200%;
+  }
+}
+
+@media (max-width: 476px) {
+  .text-container {
+    font-size: 10px;
+  }
+  .main-container h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 325px) {
+  .mini-video {
+    width: 200px;
+  }
+
+  .main-container h1 {
+    font-size: 24px;
+  }
+  .coming-soon {
+    font-size: 12px;
+  }
+}
