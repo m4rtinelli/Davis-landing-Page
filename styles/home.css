@@ -89,7 +89,7 @@ video {
   height: auto;
   object-fit: cover;
 }
-footer {
+.footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -136,6 +136,10 @@ footer {
     width: 300px;
     right: 12px;
     top: -200%;
+  }
+
+  .footer {
+    font-size: 12px;
   }
 }
 
